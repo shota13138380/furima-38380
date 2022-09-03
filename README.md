@@ -30,7 +30,7 @@
 | prefecture_id          | integer    | null: false                    |
 | scheduled_delivery_id  | integer    | null: false                    |
 | price                  | integer    | null: false                    |
-| user_id                | references | null: false, foreign_key: true |
+| user                   | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -46,8 +46,20 @@
 
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
-| item_id       | references | null: false, foreign_key: true |
-| user_id       | references | null: false, foreign_key: true |
+| item          | references | null: false, foreign_key: true |
+| user          | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :item
+- has_one    :destination
+
+## destinations テーブル
+
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| purchase      | references | null: false, foreign_key: true |
 | postcode      | integer(7) | null: false                    |
 | prefecture_id | integer    | null: false                    |
 | city          | string     | null: false                    |
@@ -57,5 +69,4 @@
 
 ### Association
 
-- belongs_to :user
-- belongs_to :item
+- belongs_to :purchase
