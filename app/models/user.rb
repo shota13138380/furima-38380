@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :messages
+  has_many :items
 
   VALID_NAME_REGEX     = /\A([ぁ-んァ-ヶ一-龥々]|ー)+\z/.freeze
   VALID_KANA_REGEX     = /\A([ァ-ン]|ー)+\z/.freeze
