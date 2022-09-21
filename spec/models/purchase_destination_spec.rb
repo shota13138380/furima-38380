@@ -17,7 +17,7 @@ RSpec.describe PurchaseDestination, type: :model do
         expect(@purchase_destination).to be_valid
       end
     end
-      
+
     context '商品が購入できないとき' do
       it 'user_idが空だと購入できない' do
         @purchase_destination.user_id = nil
