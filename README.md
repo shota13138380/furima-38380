@@ -33,8 +33,7 @@ https://furima-38380.herokuapp.com/
     - パスワード：testuser11
   - 購入者用
     - メールアドレス：test2@mail
-    - パスワード：111aaa
-    - ユーザー名：testuser22
+    - パスワード：testuser22
     - 購入用カード情報
       - 番号：4242424242424242
       - 期限：登録時より未来
