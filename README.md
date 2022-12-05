@@ -18,9 +18,9 @@
 - RSpec
   - 単体テスト(model)
 
-## URL
+## URL(停止中）
 
-https://furima-38380.herokuapp.com/
+https://furima-38380.onrender.com
 
 ## 挙動確認
 
