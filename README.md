@@ -18,7 +18,7 @@
 - RSpec
   - 単体テスト(model)
 
-## URL(停止中）
+## URL
 
 https://furima-38380.onrender.com
 
